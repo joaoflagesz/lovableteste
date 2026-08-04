@@ -24,11 +24,11 @@ export const Route = createFileRoute("/")({
         content:
           "Ordens de serviço, checklist digital com fotos e assinatura, kanban de produção e controle de peças em um só sistema mobile first.",
       },
-      { property: "og:title", content: "NexCheck Oficina — Gestão completa para oficinas" },
+      { property: "og:title", content: "NexCheck Oficina — Gestão completa para oficinas e auto centers" },
       {
         property: "og:description",
         content:
-          "Ordens de serviço, checklist digital com fotos e assinatura, kanban de produção e controle de peças em um só sistema.",
+          "Ordens de serviço, checklist digital com fotos e assinatura, kanban de produção e controle de peças em um só sistema mobile first.",
       },
     ],
   }),
