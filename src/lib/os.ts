@@ -140,3 +140,7 @@ export function initials(name: string | null | undefined) {
     .map((n) => n[0]!.toUpperCase())
     .join("");
 }
+
+export function orderTotal(o: { total_parts?: number | null; total_services?: number | null }) {
+  return Number(o.total_parts ?? 0) + Number(o.total_services ?? 0);
+}

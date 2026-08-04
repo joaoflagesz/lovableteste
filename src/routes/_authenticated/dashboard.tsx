@@ -13,7 +13,7 @@ import { AppShell } from "@/components/layout/app-shell";
 import { EmptyState, PriorityBadge, SkeletonList, StatCard, StatusBadge } from "@/components/ui-bits";
 import { Button } from "@/components/ui/button";
 import { useDashboard } from "@/lib/data";
-import { formatBRL, formatDateTime } from "@/lib/os";
+import { formatBRL, formatDateTime, orderTotal } from "@/lib/os";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
@@ -52,7 +52,7 @@ function DashboardPage() {
   const delivered = orders.filter((o) => o.status === "entregue");
   const revenue = orders
     .filter((o) => ["finalizado", "entregue"].includes(o.status))
-    .reduce((sum, o) => sum + Number(o.total_value ?? 0), 0);
+    .reduce((sum, o) => sum + orderTotal(o), 0);
 
   return (
     <AppShell
@@ -159,7 +159,7 @@ function DashboardPage() {
                   <div className="mt-3 flex items-center justify-between gap-2">
                     <StatusBadge status={o.status} />
                     <span className="text-xs font-semibold tabular-nums">
-                      {formatBRL(Number(o.total_value ?? 0))}
+                      {formatBRL(orderTotal(o))}
                     </span>
                   </div>
                 </Link>
