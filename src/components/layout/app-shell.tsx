@@ -62,7 +62,7 @@ export function Brand({ compact = false }: { compact?: boolean }) {
       </div>
       {!compact && (
         <div className="min-w-0 leading-tight">
-          <p className="truncate font-display text-sm font-700">NexCheck</p>
+          <p className="truncate font-display text-sm font-bold">NexCheck</p>
           <p className="truncate text-[11px] text-muted-foreground">Oficina</p>
         </div>
       )}
@@ -138,7 +138,7 @@ export function AppShell({
               <Brand compact />
             </div>
             <div className="min-w-0 flex-1">
-              <h1 className="truncate font-display text-base font-700 sm:text-lg">{title}</h1>
+              <h1 className="truncate font-display text-base font-bold sm:text-lg">{title}</h1>
               {subtitle && (
                 <p className="truncate text-xs text-muted-foreground">{subtitle}</p>
               )}
