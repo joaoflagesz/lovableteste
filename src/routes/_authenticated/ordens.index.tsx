@@ -30,7 +30,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useClients, useOrders, useProfiles, useVehicles } from "@/lib/data";
 import { OS_STATUSES, PRIORITIES, formatBRL, formatDate, orderTotal } from "@/lib/os";
 
-export const Route = createFileRoute("/_authenticated/ordens")({
+export const Route = createFileRoute("/_authenticated/ordens/")({
   head: () => ({
     meta: [
       { title: "Ordens de Serviço — NexCheck Oficina" },
