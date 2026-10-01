@@ -108,7 +108,7 @@ function ClinicHome() {
   const goLightbox = (delta: number) => setLightbox((current) => current === null ? null : (current + delta + photos.length) % photos.length);
 
   return (
-    <div className="site">
+    <div className="site">\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div className="emergency-top"><span><i /> ATENDIMENTO VETERINÁRIO 24 HORAS</span><span className="top-message">Emergências não esperam. Nossa equipe também não.</span><a href={wa("Olá, preciso de informações sobre atendimento veterinário.")} target="_blank" rel="noreferrer" onClick={() => track("whatsapp_click")}>Falar com a clínica <ArrowRight /></a></div>
 
       <header className="header">
