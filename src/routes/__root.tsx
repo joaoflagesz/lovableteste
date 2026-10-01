@@ -80,17 +80,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Ordens de serviço, checklist digital com fotos e assinatura, kanban de produção e controle de peças em um só sistema mobile first.",
+          "Atendimento veterinário completo 24 horas em Boa Vista - RR para cães e gatos.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "theme-color", content: "#0B1220" },
-      { property: "og:title", content: "NexCheck Oficina — Gestão completa para oficinas e auto centers" },
-      { name: "twitter:title", content: "NexCheck Oficina — Gestão completa para oficinas e auto centers" },
+      { name: "theme-color", content: "#0D4F43" },
+      { property: "og:title", content: "Clínica Veterinária Dr. Kleber 24h" },
+      { name: "twitter:title", content: "Clínica Veterinária Dr. Kleber 24h" },
       { property: "og:description", content: "Atendimento veterinário 24 horas em Boa Vista - RR para cães e gatos. Consultas, emergência, vacinas, exames, internação e cirurgias." },
       { name: "twitter:description", content: "Atendimento veterinário 24 horas em Boa Vista - RR para cães e gatos. Consultas, emergência, vacinas, exames, internação e cirurgias." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/034767fc-7531-4249-8a06-421b1b4091d8/id-preview-0bb8867c--9f8f3927-e742-4106-804d-b8b9c3b7eb27.lovable.app-1785853418838.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/034767fc-7531-4249-8a06-421b1b4091d8/id-preview-0bb8867c--9f8f3927-e742-4106-804d-b8b9c3b7eb27.lovable.app-1785853418838.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -99,7 +97,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap",
       },
     ],
   }),
