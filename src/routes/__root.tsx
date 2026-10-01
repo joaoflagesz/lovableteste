@@ -76,7 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "NexCheck Oficina — Gestão completa para oficinas e auto centers" },
+      { title: "Clínica Veterinária Dr. Kleber 24h | Boa Vista - RR" },
       {
         name: "description",
         content:
@@ -87,8 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#0B1220" },
       { property: "og:title", content: "NexCheck Oficina — Gestão completa para oficinas e auto centers" },
       { name: "twitter:title", content: "NexCheck Oficina — Gestão completa para oficinas e auto centers" },
-      { property: "og:description", content: "Ordens de serviço, checklist digital com fotos e assinatura, kanban de produção e controle de peças em um só sistema mobile first." },
-      { name: "twitter:description", content: "Ordens de serviço, checklist digital com fotos e assinatura, kanban de produção e controle de peças em um só sistema mobile first." },
+      { property: "og:description", content: "Atendimento veterinário 24 horas em Boa Vista - RR para cães e gatos. Consultas, emergência, vacinas, exames, internação e cirurgias." },
+      { name: "twitter:description", content: "Atendimento veterinário 24 horas em Boa Vista - RR para cães e gatos. Consultas, emergência, vacinas, exames, internação e cirurgias." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/034767fc-7531-4249-8a06-421b1b4091d8/id-preview-0bb8867c--9f8f3927-e742-4106-804d-b8b9c3b7eb27.lovable.app-1785853418838.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/034767fc-7531-4249-8a06-421b1b4091d8/id-preview-0bb8867c--9f8f3927-e742-4106-804d-b8b9c3b7eb27.lovable.app-1785853418838.png" },
     ],
@@ -111,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR" className="dark">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
