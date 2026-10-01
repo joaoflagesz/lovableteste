@@ -139,7 +139,7 @@ function ClinicHome() {
 
         <section className="gallery-section">
           <div className="section gallery-heading"><div><div className="section-label">POR DENTRO</div><h2>Conheça a clínica <span>de perto.</span></h2></div><p>Fachada, recepção, equipe, atendimentos e estrutura real da Clínica Veterinária Dr. Kleber.</p></div>
-          <div className="gallery-grid">{MEDIA.slice(0,9).map(([file,alt],i)=><div className={`gallery-item g${i+1}`} key={file}><img src={IMG(file)} alt={alt}/><span>{alt}</span></div>)}</div>
+          <div className="gallery-grid">{MEDIA.map(([file,alt],i)=><div className={`gallery-item g${i+1}`} key={file}><img src={IMG(file)} alt={alt}/><span>{alt}</span></div>)}</div>
         </section>
 
         <section className="section team-section">
